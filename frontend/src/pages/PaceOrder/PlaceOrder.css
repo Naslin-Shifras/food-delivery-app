@@ -1,0 +1,126 @@
+/* PlaceOrder.css */
+
+/* Main form container */
+.place-order {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Left side of the form for delivery information */
+  .place-order-left {
+    flex: 1;
+    padding-right: 2rem;
+    border-right: 2px solid #f0f0f0;
+  }
+  
+  /* Title for the delivery information section */
+  .place-order-left .title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Multi-field container for grouping inputs */
+  .multi-fields {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for input fields */
+  .place-order-left input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Placeholder text */
+  .place-order-left input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Add margin to the email and street inputs for better spacing */
+  .place-order-left input[type="email"] {
+    margin-bottom: 1rem;
+  }
+  
+  .place-order-left input[type="text"] {
+    margin-bottom: 1rem;
+  }
+  
+  /* Right side of the form for cart totals */
+  .place-order-right {
+    flex: 1;
+    padding-left: 2rem;
+  }
+  
+  /* Cart totals section */
+  .p-cart-totel {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for cart totals */
+  .p-cart-totel h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Details for cart totals */
+  .p-cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Total text */
+  .p-cart-total-details p,
+  .p-cart-total-details b {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Checkout button */
+  .p-cart-totel button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .p-cart-totel button:hover {
+    background-color: #208838;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .place-order {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .place-order-left,
+    .place-order-right {
+      padding-right: 0;
+      padding-left: 0;
+      border-right: none;
+    }
+  }
+  

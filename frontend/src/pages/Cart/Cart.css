@@ -1,0 +1,219 @@
+/* Cart.css */
+
+/* Container for the cart page */
+.cart {
+    padding: 2rem;
+    background: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Main container for cart items */
+  .cart-items {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  /* Title row for the cart items */
+  .cart-items-title {
+    display: grid;
+    grid-template-columns: 60px 1fr 120px 80px 120px 60px;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid tomato;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Title text */
+  .cart-items-title p {
+    margin: 0;
+  }
+  
+  /* Individual cart item */
+  .cart-items-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 120px 80px 120px 60px;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Cart item image */
+  .cart-items-item img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text for cart items */
+  .cart-items-item p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Remove button */
+  .cross {
+    cursor: pointer;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+  }
+  
+  .cross:hover {
+    color: #e60000;
+  }
+  
+  /* Cart bottom section */
+  .cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  /* Cart totals section */
+  .cart-totel {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  /* Title for cart totals */
+  .cart-totel h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Details for cart totals */
+  .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Total text */
+  .cart-total-details p,
+  .cart-total-details b {
+    font-size: 1rem;
+  }
+  
+  /* Checkout button */
+  .cart-totel button {
+    background-color: white;
+    color: tomato;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid tomato;
+  }
+  
+  .cart-totel button:hover {
+    background-color:tomato;
+    color: white;
+    
+  }
+  
+  /* Promo code section */
+  .cart-promocode {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 125px;
+  }
+  
+  /* Promo code title */
+  .cart-promocode p {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Promo code input */
+  .cart-promocode-input {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .cart-promocode-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .cart-promocode-input button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cart-promocode-input button:hover {
+    background-color: white;
+    color: black;
+
+    border: 1px solid black;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .cart-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-promocode {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart-items-title,
+    .cart-items-item {
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    }
+  
+    .cart-items-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .cart-total-details {
+      font-size: 0.9rem;
+    }
+  
+    .cart-totel button {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .cart-promocode-input input,
+    .cart-promocode-input button {
+      padding: 0.4rem;
+      font-size: 0.9rem;
+    }
+  }
+  

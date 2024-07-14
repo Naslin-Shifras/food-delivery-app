@@ -90,3 +90,20 @@ hr {
     color: #aaa;
     margin-top: 20px;
 }
+
+@media(max-width:750px){
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        padding: 10px;
+        min-width: 100%;
+    }
+
+    .footer-social-icons {
+        gap: 15px;
+    }
+}
